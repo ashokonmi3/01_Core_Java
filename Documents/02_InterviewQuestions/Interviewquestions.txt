@@ -1,0 +1,560 @@
+Common test automation interview questions & topics one can expect for 5+ years experience
+**************
+
+*****
+Java-Basic
+*****
+1. Types of polymorphism
+2. Difference between override and overload
+3. Methods that cannot be overloaded
+4. Static block and instance block
+5. Difference in Static and non static
+6. Encapsulation and common use cases
+7. Abstract vs interfaces
+8. Inheritance in java
+9. Methods that cannot be overloaded
+10. Type casting in java
+11. String buffer and string builder
+12. Why string is immutable in java
+13. How to handle exceptions
+14. Can I write try catch without the catch block
+15. Difference between throws and throw
+16. Use of iterator in java
+17. Difference in Final, finally and finalize 
+18. Boxing and unboxing in java
+19. Increment and decrement operation
+20. Variable Args
+21. This and super keyword in java
+22. Issues during Swtich case without break
+23. Upcasting and downcasting
+24. Baseclass of all class in java
+25. Baseclass of error and exceptions
+26. Access specifiers
+27. Continue and break statement
+28. Can main method return any value
+29. Can we overload main method. What happens when overloaded
+30.how to execute and statement before main method
+31. Difference between == and equals()
+32. Can user declare constructor as final
+33. Can we cast any other type to Boolean data with type casting.
+34.does java compile if user use 'static public void' instead of 'public static void'
+35.can we use this() and super() in a constructor
+36. Can we create object of abstract class
+37. Can we create reference for an abstract class
+38. Can we declare a class as static
+39. What is instanceOf keyword
+40. What's the load factor of HashMap
+41. How to prevent a class from being sub classes
+42. Final variable, final method and final class
+43. Ways to create a string variable.
+44. What is gc() - garbage collector
+45. Subclass and innerclass
+46. Infinite loop in java
+47. How to make copy of an element
+48. Checked and unchecked exceptions
+
+*****
+Java Collection
+*****
+
+1. Classes inside List interface, Set interface, Map Interface
+2. Arraylist vs Linkedlist
+3. Arraylist vs array
+4. Arraylist vs vector or stack
+5. Which class of List Interface to be used if user have more insertions and deletions
+6. Which class of List Interface to be used if user have more retrieval
+7. Set Interface: HashSet, TreeSet, SortedSet
+8. Map - HashMap, HashTable, TreeMap, LinkedHashMap.
+9. Stack and Queue
+10. How to maintain insertion order in Set, List and Map
+11. How to sort elements in ascending order in Set and Map
+
+*****
+Java Programs
+*****
+
+1. String reverse
+2. String Palindrome
+3. String Anagram
+4. Find occurrences of characters in a string
+5. Find the count of Capital and Small letters in a string
+6. Remove duplicate characters from string
+7. Swap to numbers without temporary variable
+8. Reverse number
+9. factorial
+10. Fibonacci
+11. Count number, alphabet and special characters
+
+*****
+Selenium
+*****
+
+1. Difference in driver.get() and driver.navigate().to()
+2. Navigation methods in selenium
+3. What is POM
+4. Implicit wait 
+5. Explicit wait- use of explicit wait, how to ignore exceptions using explicit wait
+6. Fluent wait
+7. Examples for expected conditions in explicit wait
+8. Default timeout of pageLoadTimeout.
+9. Use of desired capabilities
+10. Use of chromeOptions, firefoxOptions ,ieOptions, etc.
+11. How to disable notification in selenium.
+12. Difference between getText() and getAttribute()
+13. How to extract css property value
+14. Difference between driver.close() and driver.quit()
+15. How to handle dropdown elements with select tag and without select tag.
+[17/09, 11:38 p.m.] Ashok: 16. How to handle frames and windows
+17. How to switch back to parent window.
+18. How to perform page scroll in selenium
+19. Use of Robot keys
+20. Use of AutoIt
+21. Use of Sikuli
+22. How to perform File Upload
+23. How to click or send value to an element without using element.click() and element.sendKeys()
+24. Relative and absolute xpath
+25. Explain few Xpath functions
+26. How to login to site showing authentication popup in selenium
+27. Mention few selenium exceptions
+28. Difference between single slash and double slash.
+29. What are the scenarios that cannot be automated using selenium.
+30. How to perform right click on selenium
+31. Action class and it's methods
+32. Use of HtmlUnit driver
+33. Can we create an object of the WebDriver() in selenium?
+34. What is stale element exception and how to handle it.
+35. Xpath and CSS selector
+
+*****
+TestNG
+******
+1. Annotations in testng
+2. Difference between @BeforeTest and @BeforeMethod
+3. Soft assert vs Hard Assert
+4. How to pass parameters to test methods
+5. Use of data provider
+6. Use of invocationCount, enabled, priority, dependsOnMethod, dependsOnGroups, alwaysRun, dataProvider, groups, timeout, expectedExceptions, singleThreaded, etc
+7. testNg xml structure
+8. How to group testcases
+9. Use of IRetryAnalyzer class
+10. How to run failed testcases
+11. How to perform parallel testing.
+12. What level user can perform parallel testing
+13. Use of ISuiteListener Methods
+14. Use of TestListenerAdaptor methods
+15. How to ignore packages and classes.
+16. Can user provide negative value for setting priority.
+
+*****
+REST API
+*****
+1. Client/server Error Codes
+2. Success codes
+3. Use of GET, PUT, POST, PATCH, DELETE
+4. Difference between Put and Patch
+5. Difference between Put and Post
+6. How to handle authentication
+7. Difference between webserver and API
+8. Json/xml structure format 
+9. How to validate json response
+10. Use of JsonPath
+11. How to construct json body for Put, Post, Patch request.
+12. Use of JsonObject.
+13. What's is URI
+14. What's a resource
+15. What are the common headers used.
+16. Common content types
+
+*****
+GIT
+*****
+
+1. Use of common commands used:
+       add, status, commit, push, pull, restore, checkout, clone
+2. How to handle merge conflicts
+3. How merge issues occur.
+
+*****
+Cucumber
+*****
+
+1. keywords used inside CucumberOptions
+2. Difference between DryRun and Strict in cucumberOptions
+3. And/OR operation in Tags
+4. Annotations in Cucumber
+5. Use of order function inside cucumber annotations
+6. Use of background keyword
+7. Keywords used in cucumber
+8. How to perform singleline and multiline comment in cucumber
+9. How data is passed in cucumber
+10. Use of ScenarioOutline and example
+11. What is dataTable
+12. Can user provide multiple examples for one scenario outline
+
+**************
+1. Coding for finding first non repeated character
+
+2. Rest api -what validations will you perform on a given rest API.
+
+3. @dataprovider concepts using obj[] and obj[][]
+
+4. Using iterator in data provider
+
+5. Body datatype validations in RestAPI
+
+6. Consider a profile for Twitter, insta and fb - how will you login to these three by defining one single @test method .
+
+7. Collection Concept of set, hash and list
+
+ 
+
+Questions
+
+ 
+
+1.  Code for sorting using TreeMap or HashMap
+
+2. Code to find non repeated characters.
+
+3. Code for login classes in selenium
+
+4. Action class mousehover. How to click on dropdown in selenium using actions classes.
+
+5.ResAssured login scenario.
+
+ 
+
+ 
+
+Please go through set-1 and set-2 questions.
+
+ 
+
+Set-1: Refer to attachment
+
+ 
+
+Set 2:
+
+ 
+
+===============
+
+First round:
+
+ 
+
+-          Explain something about yourself
+
+-          Difference between Overloading and Overriding
+
+-          How can overriding be prevented without using final
+
+-          Which one is determined at run time – Overloading vs Overriding
+
+-          Question on exceptions
+
+-          Static fields – Why do we need that?
+
+-          Which version of Java are you using? What’s the latest version?
+
+-          Difference between interface and abstract classes
+
+-          Can you have non-abstract methods inside an interface?
+
+-          Why did you use Jenkins? What all have you done on Jenkins?
+
+-          What’s a CI/CD pipeline?
+
+-          Question on parallel execution and VMs
+
+-          In terms of cloud, what’s the difference between scalability and extensibility?
+
+-          If you want to scale on sauce labs, what would you do?
+
+-          What is an HTMLUnit driver?
+
+-          What work have you done using Rest API? Explain that work in detail.
+
+-          What are the different request methods?
+
+-          What’s the difference between POST and PUT?
+
+-          What’s a Data Provider in TestNG?
+
+-          Apart from using the usual way of providing the data in a Data Provider, is there any other way to provide the data (iTestContext)
+
+-          What are the advantages and limitations of using headless browser vs physical browser?
+
+-          Question on automation and regression
+
+-          What would be an ideal system? What you need on your system to start with development?
+
+-          What’s an ideal environment for you – Team related?
+
+-          What was your role as a manager in your previous projects?
+
+ 
+
+Second Round:
+
+ 
+
+-          Explain only those stuff from your profile which is technical – Tools & Technologies
+
+-          Coding problem (Find the first non-repeating letter in a String – There were 3 test data)
+
+-          Explain the logic before solving the problem
+
+-          Explain the logic without using any library methods like Collections.sort()
+
+-          How can your solved code be made more efficient?
+
+-          Write code for couple of classes using Page Object Model  for a login page
+
+-          What’s the advantage of identifying an element using an annotation
+
+-          What’s a page factory?
+
+-           An additional field is added to Login page which opens a dropdown when you hover over this new field. What would you do?
+
+-          Why did you use Rest API? Explain?
+
+-          Explain how would you test using Postman?
+
+-          What if I pass the data using body instead of query string?
+
+-          Explain header and authentication
+
+ What is Agile methodology? Why is it used?
+What is the difference between Agile and Waterfall?
+Would you prefer to work in an Agile team or Waterfall?
+Why would a company prefer to use Waterfall?
+In TestNG, how would you set to run in parallel and threads?
+ 
+
+ 
+
+=============================
+
+ 
+
+•             Walk me thru your latest project and talk about value adds
+
+•             why are currently looking for a job
+
+•             how do u identify elements on a web page
+
+•             what are the various assertion to validate functionalities
+
+•             can you give me some methods ? assertion method, etc
+
+•             what are your strengths ?
+
+•             which automaton tools have you worked on. have you used selenium?
+
+•             describe locators in selenium
+
+•             accessibility ID, xpath. which one is the most reliable one. why
+
+•             in xpath, have you used single slash and double slash? what does it mean? relative and absolute?
+
+•             when do you use sleep tanks and why?
+
+•             what is a static key word in java
+
+•             what does protected key word does?
+
+•             Job involves writing java code to automate test cases , using java code, import libraries.
+
+•             what is your contributions in your latest projects
+
+•             how did you use postman?
+
+•             what are some of the web methods that you have used
+
+•             what is sonar cube? what does it do?
+
+•             have you seen any quality hub?
+
+•             what is your experience with PCF?
+
+•             walk me your contributions in building CI CD pipeline
+
+•             what is a static key word in java or c#?
+
+•             what is a protected key word?
+
+•             List down key words
+
+•             if you are using data base connections, what is a final key word?
+
+•             what is difference between final and static key word?
+
+•             what are various assertions that you have used in TestNg, etc
+
+•             what is your understanding of a test automation framework?
+
+•             did you work with appium and selenium?
+
+•             what are different locators in selenium?
+
+•             what is single slash and double slash?
+
+•             what is implicit weight and explicit weight?
+
+•             tell me a recent project. where you found an important ./ critical defect ?
+
+•             what are difference between severity and priority?
+
+•             what are various types of testing?
+
+•             Let’s say a function is written by some developer. what are the various test data that you would submit and expected results. walk me through your testing process to sign off whether the test case is working or not?
+
+•             have you tested APIs? how have you done that?
+
+•             what is a static key word in java
+
+•             what are the various identifiers in selenium
+
+•             which is the best locator that you would use?
+
+•             what is gherkin language. why is it used?
+
+•             what is a finale key word in java?
+
+•             How have you as a tester , been responsible for product quality, code quality.
+
+ 
+
+ 
+
+ 
+
+Coding exercises:
+
+ 
+
+•             write code to invoke launch google.com and send text "what is  automation" in search box. write a ui automation code that send keys to web browser "what is automation"
+
+•             write a selenium code to gather the web driver.
+
+•             Write code that will take a string as input and return whether it is a Palindrome or not
+
+•             Write code to identify a text box on the UI and check if the text in the box is alphanumeric.
+
+•             give you a program /  algorithm . how do you understand the problem. your function needs to take a string as an input which are numbers. and abc12ef35 . return total of all integers what are test data you would use to test this?
+
+•             int arr1 = [1,4,6,8] and int arr2 = [3,5,6,7] are two arrays, both are sorted already. Write a function that needs to take these arrays and return a sorted array of 2 input arrays. i.e. return one array
+
+ 
+
+
+
+1. Java – with demonstrated ability to read, write and modify core Java projects / start from scratch
+2. In-depth knowledge on working with test automation frameworks , creating / modifying the automation frameworks
+3. Selenium for test automation, extensive exposure to selenium architecture and automation components
+4. utilizing the testNG, BDD framework (JBehave/Cucumber)/ Key word Driven/Data Driven for test automation
+5. Basic Rest API knowledge and automation experience using any tool
+6. experience using Jenkins or any configuration tool
+7. experience utilizing Maven or Gradle
+8. testing practices, handling Code repository and test management tools
+1. mobile test automation using Appium/Seetest knowledge
+2. Some development knowledge either front end(React JS/ Angular) or Backend microservices
+3. Automation of windows client applications
+4. experience performing database validation automation (SQL/ PL-SQL)
+5. working within a Technology Department for a commercial airline preferred
+6. CI or CICD pipeline Knowledge
+7. Cloud knowledge(AWS)
+8. Why we need Interface when we already have Abstract class?
+9. How to access a private variable outside a class?
+10. How you will flow the expected data among the pages for validation?
+11. What build tool you use in your framework and the command to run a single TC and set of TCs?
+12. How reporting works in your framework, is it customized? If yes what is the customization done?
+13. What kind of framework you have worked on? If BDD: Where you initialize the webdriver? Some questions on BDD
+if Keyword/data driven: How you read the data and key? How you build your code and execute TCs? which build tool and their commands?
+14. Have you used Jenkins or any configuration tools? Some practical questions around that?
+15. How you are managing logging in your framework?
+16. What kind of exception handling used in your framework with examples? At what layer of your framework are they implemented? Some questions around exception handling.
+17. Let’s say a function is written by some developer. what are the various test data that you would submit and expected results. walk me through your testing process to sign off whether the test case is working or not?
+
+
+Coding exercises:
+
+1• write code to invoke launch google.com and send text "what is  automation" in search box. write a ui automation code that send keys to web browser "what is automation"
+
+2• write a selenium code to gather the web driver.
+
+3• Write code that will take a string as input and return whether it is a Palindrome or not
+
+4• Write code to identify a text box on the UI and check if the text in the box is alphanumeric.
+
+5• give you a program /  algorithm . how do you understand the problem. your function needs to take a string as an input which are numbers. and abc12ef35 . return total of all integers what are test data you would use to test this?
+
+6• int arr1 = [1,4,6,8] and int arr2 = [3,5,6,7] are two arrays, both are sorted already. Write a function that needs to take these arrays and return a sorted array of 2 input arrays. i.e. return one array
+
+7• Write a Selenium program to book flight between two destination on any sample flight application available over the internet
+
+8• Wrtie program to catch different exceptions
+
+9• Write a Java progrm to merge two arrays
+
+10• Write a Java program to print Boom if the entered input is multiple of 3 and Bang if the entered input number is multiple of 5. Print BangBoom (not BoomBang) if entered number is multiple of both 3 & 5. Ensure no new line added in the output. If the entered number is not a multiple of 3 and 5, then print the output as “Entered number is not a multiple of 3 & 5”
+
+11.If the candidate completes this program ask questions around how do you improve the performance of the code, Review of Java Code, Best practice followed in the code etc…
+
+12. A bouquet consists of different types of flowers, Roses, Jasmines, Lilys etc. 
+Consider a rose costs 1$, jasmine costs 2$, Lily costs 3$. The cost of the bouquet is the sum of the cost of the flowers in it.  
+Use the object-oriented approach to design the above situation and write utility method to calculate the cost of the given bouquet. 
+
+13. Anagram
+14. Coding excercise on Regex- pattern mathers
+15. (For architects) Design patterns related excercise.
+//=============================================================
+//=============================================================
+TestNG Questrions:
+	parameterization (Data Provider) with example
+	parallel (How did you achieve parllel execution)
+	dataprovider
+	TestNG listeners(What are the TestNg listners and where did you use)
+	Retry mechanism ( What is retyr mechanism in TestNg and where did you use)
+	ITestContext
+
+Selenium:
+	Challenges
+	xpath
+	locator
+	java script executor
+	driver close quit
+	tabs and window close
+	exceptions in selenium
+	can I switch between other window If I close one window can I switch back
+	StaleElement
+	waits
+
+Java:
+	trwithresources
+	exceptions
+	inheritance
+	can I access static methods with inheritane
+	write a program to get second max list
+	write a program to pritn integers and sum of integers in  alphanumeric
+	difference between arraylist and linkedlist
+	
+
+Cucumber:	
+	features
+	stepdef
+	CucumberHooks
+	CucumberOptions
+	Runner file
+	how we pass test data
+	parallel execution
+
+CICD:
+
+What are the different GIT commands have you used?
+Hoping that the above mentioned topics and questions will helps you to clear your interviews.
+
+All the best for your job hunt
+Have a good day.

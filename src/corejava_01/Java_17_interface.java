@@ -1,4 +1,4 @@
-package corejavapackage;
+package corejava_01;
 /*
  * Consider we want to start a service like "makemytrip.com" or "expedia.com",
  * where we are responsible for displaying the flights from various flight

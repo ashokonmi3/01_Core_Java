@@ -1,4 +1,4 @@
-package corejavapackage;
+package corejava_01;
 
 class Java_13_SamePackage {
 	Java_13_SamePackage() {

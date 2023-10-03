@@ -1,4 +1,4 @@
-package corejavapackage;
+package corejava_01;
 
 //class Student {
 //	int rollno;// instance variable

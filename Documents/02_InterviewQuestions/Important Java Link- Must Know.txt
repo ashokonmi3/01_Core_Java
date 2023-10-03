@@ -1,0 +1,29 @@
+Java readout
+https://www.softwaretestingmaterial.com/java-tutorial/
+
+Java Quizzes
+https://www.softwaretestingmaterial.com/java-quiz/
+https://www.guru99.com/java-quiz.html
+Java Interview Questions And Answers (40+)
+https://www.softwaretestingmaterial.com/java-interview-questions/
+
+https://www.techbeamers.com/must-know-qa-interview-questions-senior-engineer/
+https://learning.naukri.com/articles/top-20-test-lead-interview-questions-answers/
+https://www.projectpractical.com/top-21-test-lead-manager-interview-questions-answers-for-2019/
+https://www.softwaretestinghelp.com/qa-test-lead-interview-questions-and-answers/
+https://www.indeed.com/career-advice/interviewing/qa-manager-interview-questions
+https://www.guru99.com/top-20-test-manager-interview-questions.html
+
+
+Top 40+ Java Interview Questions And Answers in 2021 https://www.softwaretestingmaterial.com/java-interview-questions/
+
+Frequently Asked Java Programs
+https://www.youtube.com/watch?v=3vbizK6KzaU&list=PLUDwpEzHYYLtgkXK6YaZ4I2XcsjMqIaEa
+
+Java Full Course for Beginners
+https://www.youtube.com/watch?v=_3ds4qujpxU&list=PLUDwpEzHYYLt8jYba459LEYrzlUKINCrk
+
+
+Java cheat sheet
+https://github.com/in28minutes/java-cheat-sheet
+https://hackr.io/blog/java-cheat-sheet

@@ -1,4 +1,4 @@
-package corejavapackage;
+package corejava_01;
 
 //class Student1 {
 //	int rollno;

@@ -1,4 +1,4 @@
-package corejavapackage;
+package corejava_01;
 
 public class Java_13_Protection {
 	int n = 1;// default

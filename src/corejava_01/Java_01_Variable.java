@@ -36,7 +36,7 @@ package corejava_01;
 // ctrl+f11
 // green key Run
 // right click and run as java application
-
+//With Ctrl + W we can close opened tab. With Ctrl + Shift + E we can select which files we want to close
 // =====================
 
 //public class Java_01_Variable {

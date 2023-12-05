@@ -27,8 +27,8 @@ package corejava_01;
 // System.out.println(a == c);
 // String e = new String("abc");
 // String f = new String("abc");
-// System.out.println(f == e);
-// System.out.println("e equals(f) " + e.equals(f));// false
+// System.out.println(f == e);// false
+// System.out.println("e equals(f) " + e.equals(f));// true
 // System.out.println("a.equalsIgnoreCase(d) " + a.equalsIgnoreCase(d)); // true
 //
 // }
@@ -51,7 +51,22 @@ package corejava_01;
 // the JVM will not create a new String object but use the reference of the
 // cached String.
 //
+// String objects: Allow dynamic string construction with methods like
+// substring(), concat(), replace(), etc.
+// String literals: While convenient, lack direct methods for manipulation;
+// operations on literals create new instances.
 
+// Garbage Collection:
+// String objects: If no longer referenced, they become eligible for garbage
+// collection, allowing memory reclamation.
+// String literals: Persist throughout the program's life, which might lead to
+// memory retention in some cases.
+
+// Performance Considerations:
+// String objects: Allow efficient handling of large strings through methods
+// like substring(), avoiding unnecessary memory overhead.
+// String literals: Pre-allocated in the pool, improving performance for
+// frequently used strings but might cause overhead for less-used ones.
 // ======================================
 // public class Java_05_Strings {
 // public static void main(String[] args) {
@@ -62,23 +77,27 @@ package corejava_01;
 // System.out.println(1 + 1 + "Selenium" + 1 + 1);
 // System.out.println(1 + "1" + "Selenium" + "java");
 // System.out.println("Selenium" + (1 + 1));
+// System.out.println('A' + 1 + 1);
+// System.out.println(1 + 1 + 'A');
+// System.out.println("Java" + 'A');
 //
 // }
 // }
 
 //// =============================================================
-// java
-// 0123
+
 // public class Java_05_Strings {
 // public static void main(String[] args) {
 // String str1 = "abcdfg@gmail.com";
 // String str2 = " Java";
 // System.out.println("Length of string : " + str1.length()); // 8 (finding
-//// length of the String)
+// // length of the String)
 // System.out.println("String contains Yahoo: " + str1.contains("yahoo"));//
-//// false (finding sub string)
+// // false (finding sub string)
 // System.out.println("String contains gmail : " + str1.contains("gmail"));//
-//// true (finding sub string)
+// // true (finding sub string)
+// // java
+// // 0123
 // char result = str1.charAt(4);
 // System.out.println(result); // S
 // str1 = str1.concat(str2);
@@ -86,6 +105,8 @@ package corejava_01;
 //
 // }
 // }
+
+// done till here
 // ==============================
 // Returning Sub Strings
 // substring(staring index, ending index)
@@ -105,7 +126,7 @@ package corejava_01;
 // }
 // }
 // =============================================================
-
+//
 // public class Java_05_Strings {
 // public static void main(String[] args) {
 // String str1 = "selenium";
@@ -167,8 +188,8 @@ package corejava_01;
 // System.out.println(str3.trim());
 // }
 // }
-////
-//// ---------------------------------------------
+
+// ---------------------------------------------
 // ------------------------------------------------
 // 10) endsWith Method (ends with specified suffix)
 ////
@@ -181,6 +202,22 @@ package corejava_01;
 //
 // }
 // }
+
+// =======================
+
+// public class Java_05_Strings {
+// public static void main(String[] args) {
+// String str1 = new String(" selenium");
+// System.out.println(str1.endsWith("Testing"));// true
+// System.out.println(str1.endsWith("ing"));// true
+// System.out.println(str1.endsWith("Selenium"));// false
+// System.out.println(str1.trim());
+// System.out.println(str1.toUpperCase());// String s=str1.toUpperCase()
+// System.out.println(str1.toLowerCase());
+//
+// }
+// }
+
 // =================================
 // The StringBuilder Class StringBuilder objects are like String objects,
 // except that they can be modified.Internally, these objects are treated
@@ -196,9 +233,19 @@ package corejava_01;
 //
 // class Java_05_Strings {
 // public static void main(String[] args) {
-// String s1 = "java selenium";// immutable data type
+// String s1 = "selenium";// immutable data type
 // s1[0] = "j";
-// s1 = "python";
+// System.out.println(s1);
+//
+// }
+// }
+
+// ===========
+// class Java_05_Strings {
+// public static void main(String[] args) {
+// String s1 = "selenium";// immutable data type
+// s1 = "jelenium";
+// s1= "Python";
 // System.out.println(s1);
 //
 // }
@@ -208,13 +255,32 @@ package corejava_01;
 //
 // public static void main(String[] args) {
 // StringBuilder s2 = new StringBuilder("python");
-// s2.append("selenium");
-// System.out.println("StringBuilder: " + s2);
-// StringBuffer s3 = new StringBuffer("python");
+// System.out.println("Hash code of the string s2: " + s2.hashCode());
 //
-// StringBuffer s4 = s3.append("two");
+// s2.append("selenium");
+// System.out.println("Hash code of the string s2 after append: " +
+// s2.hashCode());
+//
+// System.out.println("StringBuilder: " + s2);
+//
+// StringBuffer s3 = new StringBuffer("python");
+// System.out.println("Hash code of the string s3: " + s3.hashCode());
+//
 // s3.append("selenium");
-// System.out.println("StringBuffer: " + s4);
+// System.out.println("Hash code of the string s3 after append: " +
+// s3.hashCode());
+// System.out.println("StringBuffer s3: " + s3);
+//
+// String s4 = new String("python");
+// System.out.println("Hash code of the string s4: " + s4.hashCode());
+// // s4.append("selenium"); // Not supported
+//
+// s4 = s4 + "selenium";
+// System.out.println("String: " + s4);
+// int hashCode = s4.hashCode();
+// System.out.println("Hash code of the string s4 after append: " +
+// s4.hashCode());
+//
 // }
 // }
 // ====================
@@ -245,9 +311,16 @@ package corejava_01;
 // class Java_05_Strings {
 //
 // public static void main(String[] args) {
-// StringBuilder s2 = new StringBuilder("java selenium is awsome");
+// StringBuilder s2 = new StringBuilder("0123456789");
 // System.out.println(s2);// true
 // s2.replace(0, 4, "AAAA");
+// System.out.println("StringBuilder: " + s2);
+// s2.replace(0, 6, "AAAA");
+// // s2.replace(6, 7, "A");
+//
+// System.out.println("StringBuilder: " + s2);
+// s2.replace(6, 7, "X");
+//
 // System.out.println("StringBuilder: " + s2);
 //
 // }
@@ -259,8 +332,8 @@ package corejava_01;
 // String s2 = new String("java selenium is awsome");
 // int count = 0;
 // for (int i = 0; i < s2.length(); i++) {
-// if (s2.charAt(i) == ' ')
-// count = ++count;
+// if (s2.charAt(i) == 'a') // if('j'=="java"
+// count++;
 // }
 // System.out.println(count);// true
 //
@@ -270,12 +343,28 @@ package corejava_01;
 // class Java_05_Strings {
 // public static void main(String[] args) {
 // String s2 = new String("java selenium is awsome");
-// int count = 0;
-// String s = s2.replaceAll(" ", "");
+// String s = s2.replaceAll(" ", " ");
 // System.out.println(s);// true
 //
 // }
 // }
+//=================
+class Java_05_Strings {
+	public static void main(String[] args) {
+		int number = 452;
+		String strNumber = String.valueOf(number);// "452"
+		System.out.println(strNumber);// true
+
+		int number1 = 42;
+		String strNumber1 = "" + number;
+		System.out.println(strNumber1);// true
+
+		int number2 = 42;
+		String strNumber2 = Integer.toString(number);// "42"
+		System.out.println(strNumber2);// true
+
+	}
+}
 // =================================
 // if you change string a lot (add, remove, change, replace characters)
 // because it's more efficient. If you do simply operation you should use
@@ -292,12 +381,11 @@ package corejava_01;
 // String class object because a String object is immutable.
 // If a string can change (example: lots of logic and operations in the
 // construction of the string) and will only be accessed from a single thread,
-// using a StringBuilder is good
-// enough.
+// using a StringBuilder is good enough.
 // If a string can change, and will be accessed from multiple threads, use a
 // StringBuffer because StringBuffer is synchronous so you have thread-safety.
-// helloworld
 
+// =========================
 // Assignements 1)Write a Java program to get the character at the given index
 // within the String. 2.Write a Java program to get the character ( at the given
 // index within the String. 3) Write a java program to count a character of a

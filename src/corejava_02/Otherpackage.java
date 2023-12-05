@@ -1,8 +1,8 @@
-package Package;
+package corejava_02;
 
 class OtherPackage {
 	OtherPackage() {
-		corejavapackage.Java_13_AccessModifier p = new corejavapackage.Java_13_AccessModifier();
+		corejava_01.Java_13_AccessModifier p = new corejava_01.Java_13_AccessModifier();
 		System.out.println("other package constructor");
 		// class or package only
 		System.out.println("default n = " + p.n_def);// default

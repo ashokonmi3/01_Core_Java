@@ -46,8 +46,6 @@ package corejava_01;
 // void close();
 // }
 //
-////
-//////
 // class Google implements webdriver {
 // // Implement Callback's interface
 // public void geturl(int p) {
@@ -56,6 +54,7 @@ package corejava_01;
 //
 // }
 //
+////
 // class firefox implements webdriver {
 // ////// // // // Implement Callback's interface
 // //
@@ -64,8 +63,6 @@ package corejava_01;
 // }
 // }
 //
-////
-//////
 // class IE implements webdriver {
 // // Implement Callback's interface
 //
@@ -87,10 +84,14 @@ package corejava_01;
 // }
 
 // =========================
+
+// class Interface {
+// public static void main(String args[]) {
 // webdriver driver = new ChromeDriver();
 // webdriver a = new Firefoxdriver();
 // webdriver b = new IeDriver();
-//
+// }
+// }
 
 // ====================
 // interface Mywebsite {

@@ -142,15 +142,15 @@ package corejava_01;
 
 // ============================================
 // Objects may be passed to methods.
-//class Test {
+//class ObjectasParam {
 //	int a, b;
 //
-//	Test(int i, int j) {
+//	ObjectasParam(int i, int j) {
 //		a = i;
 //		b = j;
 //	}
 //
-//	boolean equalTo(Test o) {// return true if o is equal to the invoking object
+//	boolean equalTo(ObjectasParam o) {// return true if o is equal to the invoking object
 //		if (a == o.a && b == o.b)// ob1.a==ob2.a && ob1.b==ob2.b
 //
 //			return true;
@@ -161,9 +161,9 @@ package corejava_01;
 //
 //class Java_10_OverloadDemo {
 //	public static void main(String args[]) {
-//		Test ob1 = new Test(100, 22);
-//		Test ob2 = new Test(100, 22);
-//		Test ob3 = new Test(-1, -10);
+//		ObjectasParam ob1 = new ObjectasParam(100, 22);
+//		ObjectasParam ob2 = new ObjectasParam(100, 22);
+//		ObjectasParam ob3 = new ObjectasParam(-1, -10);
 //		System.out.println("ob1 == ob2: " + ob1.equalTo(ob2));
 //		System.out.println("ob1 == ob3: " + ob1.equalTo(ob3));
 //		System.out.println("ob1 == ob3: " + ob3.equalTo(ob1));

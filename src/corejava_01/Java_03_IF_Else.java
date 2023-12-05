@@ -5,12 +5,34 @@ package corejava_01;
 //		int a, b;
 //		a = 100;
 //		b = 200;
-//		if (a == b) {// if(true)
-//			System.out.println("A is a Big Number");
+//		if (a == b) {// if(true) // do u have 500 rs
+//			System.out.println("A is a Big Number"); // 500 rs are there buy sweets
 //		}
-//		System.out.println("After if");
+//		System.out.println("After if");// come my home
 //	}
 //}
+// ==============================
+// If your age is greater than 18 you are eligible to vote
+
+// public class Java_03_IF_Else {
+// public static void main(String[] args) {
+// int age;
+// System.out.print("Enter Your age: ");
+// Scanner i = new Scanner(System.in);
+// age = i.nextInt();
+//
+// if (age > 18) {// if(true)
+// System.out.println("Eligible for vote");
+// } else {
+// System.out.println("Not Eligible for vote");
+//
+// }
+//
+// System.out.println("Age comparision is done");
+//
+// }
+// }
+
 // ========================
 //public class Java_03_IF_Else {
 //	public static void main(String[] args) {
@@ -27,15 +49,31 @@ package corejava_01;
 //
 //	}
 //}
-// ==============
+//===================
 //public class Java_03_IF_Else {
 //	public static void main(String[] args) {
-//		if (true) {
-//			System.out.println("I am in if condition");
+//		int a, b;
+//		a = 1001;
+//		b = 1002;
+//		if (a == b) {// if(true)
+//			System.out.println("A is a Big Number");
 //		}
-//		System.out.println("After if");
+//
+//		System.out.println("After if first line");
+//		System.out.println("After if second line ");
+//		System.out.println("After if third line ");
+//
 //	}
 //}
+// ==============
+// public class Java_03_IF_Else {
+// public static void main(String[] args) {
+// if (true) {
+// System.out.println("I am in if condition");
+// }
+// System.out.println("After if");
+// }
+// }
 // ===============
 //public class Java_03_IF_Else {
 //	public static void main(String[] args) {
@@ -176,22 +214,25 @@ package corejava_01;
 //		System.out.println("I am after the if else");
 //	}
 //}
+
+// done till here
+
 // =====================================
 //public class Java_03_IF_Else {
 //	public static void main(String[] args) {
 //		int a, b;
 //		a = 10;
 //		b = 50;
-//		if (a < b) {
-//			if (a < 5) {
+//		if (a < b) { //if (true)
+//			if (a < 5) { //if (10<5) --> false
 //				System.out.println("A is a Big Number");
 //			}
 //		}
 //		System.out.println("I am after the if else");
 //	}
 //}
-//// =================
-
+////// =================
+//
 //public class Java_03_IF_Else {
 //	public static void main(String[] args) {
 //		int score = 110;
@@ -220,7 +261,9 @@ package corejava_01;
 // object besides String.
 //public class Java_03_IF_Else {
 //	public static void main(String[] args) {
-//		int a = 10;
+//		System.out.print("Enter an integer: ");
+//		Scanner i = new Scanner(System.in);// java.util
+//		int a = i.nextInt();
 //		switch (a) {
 //		case 10:
 //			System.out.println("Excellent");
@@ -228,7 +271,7 @@ package corejava_01;
 //		case 40:
 //			System.out.println("Well Done");
 //			break;
-//		case 'C':
+//		case 20:
 //			System.out.println("Better");
 //			break;
 //		default:
@@ -366,13 +409,33 @@ package corejava_01;
 // ====================
 // Variable avg can’t be accessed because it’s local to the if block. Variables
 // local to the if block can’t be accessed in the else block.
+//public class Java_03_IF_Else {
+//	public static void main(String[] args) {
+//		double marks1 = 50;
+//		double marks2 = 60;
+//		double marks3 = 40;
+//		double maxMarks = 100;
+//		double avg;
+//		if (maxMarks > 0) {
+//			// double avg;
+//			avg = (marks1 + marks2 + marks3) / (maxMarks * 3) * 100;
+//			System.out.println(avg);
+//
+//			// Variable avg is local to if block
+//
+//		} else {
+//			avg = 0;
+//			System.out.println("in else part");
+//		}
+//	}
+//}
+//======================
 public class Java_03_IF_Else {
 	public static void main(String[] args) {
 		double marks1 = 50;
 		double marks2 = 60;
 		double marks3 = 40;
 		double maxMarks = 100;
-		// double avg;
 		if (maxMarks > 0) {
 			double avg;
 			avg = (marks1 + marks2 + marks3) / (maxMarks * 3) * 100;
@@ -386,6 +449,7 @@ public class Java_03_IF_Else {
 		}
 	}
 }
+
 // ======================
 /*
  * #Assignment 1 1)The current year and the year in which the employee joined

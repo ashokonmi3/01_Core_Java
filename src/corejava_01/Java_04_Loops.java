@@ -66,7 +66,7 @@ package corejava_01;
 //			if ((i != 4) && (i != 7)) {
 //				System.out.println(i);
 //			} else {
-//				System.out.println("java " + i);
+//				System.out.println("I am from else part " + i);
 //
 //			}
 //		}
@@ -79,6 +79,11 @@ package corejava_01;
 //		while (i <= 10) {// condition
 //			System.out.println(i);// body of loop
 //			i++;// increment
+//		}
+//		// initialization condition increment
+//		for (int j = 2; j <= 10; j++) {
+//			System.out.println(j);// body of loop
+//
 //		}
 //	}
 //}
@@ -129,6 +134,9 @@ package corejava_01;
 //				continue;
 //			}
 //			System.out.println(i);
+//			System.out.println("With out continue");
+//			System.out.println("this will not executed in continue");
+//
 //		}
 //		System.out.println("Out side the loop");
 //	}
@@ -154,85 +162,114 @@ package corejava_01;
 //	}
 //}
 // =========================
-//public class Java_04_Loops {
-//	public static void main(String[] args) {
-//		int i = 2;
-//		for (int j = 1; j <= 3; j++) {
-//			System.out.println(i + " " + j);
-//		}
+// public class Java_04_Loops {
+// public static void main(String[] args) {
+// int i = 2;
+// for (int j = 1; j <= 3; j++) {
+// System.out.println(i + " " + j);
+// }
 //
-//	}
-//}
+// }
+// }
 //// ==================================
 //public class Java_04_Loops {
 //	public static void main(String[] args) {
-//		int i = 3;
+//		int i = 0;
+//		for (int j = 1; j <= 3; j++) {
+//			System.out.println(i + " " + j);
+//		}
+//		i = 1;
+//		for (int j = 1; j <= 3; j++) {
+//			System.out.println(i + " " + j);
+//		}
+//		i = 2;
+//		for (int j = 1; j <= 3; j++) {
+//			System.out.println(i + " " + j);
+//		}
+//		i = 3;
 //		for (int j = 1; j <= 3; j++) {
 //			System.out.println(i + " " + j);
 //		}
 //
 //	}
 //}
+// =====================
+// public class Java_04_Loops {
+// public static void main(String[] args) {
+// int i = 3;
+// for (int j = 1; j <= 3; j++) {
+// System.out.println(i + " " + j);
+// }
+//
+// }
+// }
+
 // =======================
-//public class Java_04_Loops {
-//	public static void main(String[] args) {
-//		for (int i = 0; i < 3; i++) {// i=3
-//			for (int j = 1; j <= 3; j++) {
-//				System.out.println(i + " " + j);
-//			}
-//		}
-//	}
-//}
+public class Java_04_Loops {
+	public static void main(String[] args) {
+		for (int i = 0; i <= 3; i++) {// i=3
+			for (int j = 1; j <= 3; j++) {
+				System.out.println(i + " " + j);
+			}
+		}
+	}
+}
 //
 // =====================================
 // Loop labeling
 //
-//public class Java_04_Loops {
-//	public static void main(String[] args) {
-//		// Using Label for outer and for loop
-//		outerloop: for (int i = 1; i <= 3; i++) {
-//			innerloop: for (int j = 1; j <= 3; j++) {
-//				if (i == 2 && j == 2) {
-//					break outerloop;
-//				}
-//				System.out.println(i + " " + j);
-//			}
-//		}
-//		System.out.println(" i am out side of outerloop");
+// public class Java_04_Loops {
+// public static void main(String[] args) {
+// // Using Label for outer and for loop
+// outerloop: for (int i = 1; i <= 3; i++) {
+// innerloop: for (int j = 1; j <= 3; j++) {
+// if (i == 2 && j == 2) {
+// break outerloop;
+// }
+// System.out.println(i + " " + j);
+// }
+// }
+// System.out.println(" i am out side of outerloop");
 //
-//	}
-//}
+// }
+// }
 
 // ==============================
-//public class Java_04_Loops {
-//	public static void main(String[] args) {
-//		outerloop: for (int i = 1; i <= 3; i++) {
-//			innerloop: for (int j = 1; j <= 3; j++) {
-//				if (i == 2 && j == 2) {
-//					break innerloop;
-//				}
-//				System.out.println(i + " " + j);
-//			}
-//			System.out.println(" i am out side of innerloop");
+// public class Java_04_Loops {
+// public static void main(String[] args) {
+// outerloop: for (int i = 1; i <= 3; i++) {
+// innerloop: for (int j = 1; j <= 3; j++) {
+// if (i == 2 && j == 2) {
+// break innerloop;
+// }
+// System.out.println(i + " " + j);
+// }
+// System.out.println(" i am out side of innerloop");
 //
-//		}
-//		System.out.println(" i am out side of outerloop");
+// }
+// System.out.println(" i am out side of outerloop");
 //
-//	}
-//}
+// }
+// }
 
 //// ==================================
-//public class Java_04_Loops {
-//	public static void main(String[] args) {
-//		int n = 4;
-//		for (int i = 1; i <= n; i++) {
-//			for (int j = 1; j <= n; j++) {
-//				System.out.print("*");
-//			}
-//			System.out.println();
-//		}
-//	}
-//}
+// public class Java_04_Loops {
+// public static void main(String[] args) {
+// int n = 4;
+// // for (int j = 1; j <= n; j++) {
+// // System.out.print("*");
+// // }
+//
+// for (int i = 1; i <= n; i++) {
+// for (int j = 1; j <= n; j++) {
+// System.out.print("*");
+// }
+// System.out.println();
+// }
+//
+// }
+//
+// }
 
 // // for (int j = 1; j <= 2; j++) {
 // // System.out.print("*");
@@ -240,27 +277,27 @@ package corejava_01;
 // }
 
 // =================================
-//public class Java_04_Loops {
-//	public static void main(String[] args) {
-//		// Using no condition in for loop
-//		for (;;) {
-//			//
-//			System.out.println("infinitive loop");
-//			//
-//		}
-//	}
-//}
+// public class Java_04_Loops {
+// public static void main(String[] args) {
+// // Using no condition in for loop
+// for (;;) {
+// //
+// System.out.println("infinitive loop");
+// //
+// }
+// }
+// }
 
 // ================
-public class Java_04_Loops {
-	public static void main(String[] args) {
-
-		for (int ctr = 0; ctr < 5; ++ctr) {
-			System.out.println(ctr);
-		}
-		System.out.println(ctr);
-	}
-}
+// public class Java_04_Loops {
+// public static void main(String[] args) {
+//
+// for (int ctr = 0; ctr < 5; ++ctr) {
+// System.out.println(ctr);
+// }
+// System.out.println(ctr);
+// }
+// }
 
 // loop variables aren’
 // t accessible

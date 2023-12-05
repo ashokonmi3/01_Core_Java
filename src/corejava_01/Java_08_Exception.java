@@ -13,53 +13,53 @@ package corejava_01;
  * alternative pilot can be compared to an exception handler.
  * 
  */
-// public class Java_08_Exception {
-// public static void main(String[] args) {
-// int a = 10;
-// int b = a / 0;
-// System.out.println(b);
-// System.out.println("Java exception");// ArithmeticException: / by zero
-// }
-// }
+//public class Java_08_Exception {
+//	public static void main(String[] args) {
+//		int a = 10;
+//		int b = a / 0;
+//		System.out.println(b);
+//		System.out.println("Java exception");// ArithmeticException: / by zero
+//	}
+//}
 // =====================
-// public class Java_08_Exception {
-// public static void main(String[] args) {
-// String s = null;
-// System.out.println(s.length());// NullPointerException
-// System.out.println("Java exception");
-// }
-// }
+//public class Java_08_Exception {
+//	public static void main(String[] args) {
+//		String s = null;
+//		System.out.println(s.length());// NullPointerException
+//		System.out.println("Java exception");
+//	}
+//}
 
 // =========================
-// public class Java_08_Exception {
-// public static void main(String[] args) {
-// String s = "123";
-// int y = Integer.parseInt(s);
-// System.out.println(y);// NumberFormatException }
+//public class Java_08_Exception {
+//	public static void main(String[] args) {
+//		String s = "123";
+//		int y = Integer.parseInt(s);
+//		System.out.println(y);// NumberFormatException }
 //
-// }
-// }
+//	}
+//}
 // =============================
-// public class Java_08_Exception {
-// public static void main(String[] args) {
-// String s = "abc123";
-// int y = Integer.parseInt(s);
-// System.out.println(y);// NumberFormatException }
-// System.out.println("Java exception");
+//public class Java_08_Exception {
+//	public static void main(String[] args) {
+//		String s = "abc123";
+//		int y = Integer.parseInt(s);
+//		System.out.println(y);// NumberFormatException }
+//		System.out.println("Java exception");
 //
-// }
-// }
+//	}
+//}
 
 // ================================
-// public class Java_08_Exception {
-// public static void main(String[] args) {
-// int a[] = new int[5];
-// a[10] = 100;
-// System.out.println(a[10]);
-// System.out.println("Java exception");
+//public class Java_08_Exception {
+//	public static void main(String[] args) {
+//		int a[] = new int[5];
+//		a[10] = 100;
+//		System.out.println(a[10]);
+//		System.out.println("Java exception");
 //
-// }
-// }
+//	}
+//}
 // ==========================
 
 // Try catch
@@ -67,216 +67,218 @@ package corejava_01;
 /// *
 
 // =====================
-// public class Java_08_Exception {
+//public class Java_08_Exception {
 //
-// public static void main(String[] args) {
+//	public static void main(String[] args) {
 //
-// int a = 10;
-// int b = 0;
-// int result;
-// try {
-// result = a / b;
-// System.out.println(result);
-// } catch (Exception e) {
-// System.out.println("Divided by Zero Error");
-// }
-// System.out.println("Hello Java");
-// System.out.println("Hello Selenium");
-// }
-// }
+//		int a = 10;
+//		int b = 0;
+//		int result;
+//		try {
+//			result = a / b;
+//			System.out.println(result);
+//		} catch (Exception e) {
+//			System.out.println("Divided by Zero Error");
+//		}
+//		System.out.println("Hello Java");
+//		System.out.println("Hello Selenium");
+//	}
+//}
 
 // =========================================
 
-// public class Java_08_Exception {
-// public static void main(String[] args) {
+//public class Java_08_Exception {
+//	public static void main(String[] args) {
 //
-// int a = 10;
-// int b = 0;
-// int result;
-// int array1[] = new int[4];
-// try {
-// result = a / b;
-// System.out.println(result);
-// } catch (ArithmeticException e) {
-// System.out.println("Divided by Zero Error");
-// }
-// try {
-// array1[10] = 100;
-// System.out.println(array1[10]);
-// } catch (ArrayIndexOutOfBoundsException e) {
-// System.out.println("Array Out of Bound Error");
-// }
-// System.out.println("Hello Java");
-// System.out.println("Hello Selenium");
-// }
-// }
+//		int a = 10;
+//		int b = 0;
+//		int result;
+//		int array1[] = new int[4];
+//		try {
+//			result = a / b;
+//			System.out.println(result);
+//		} catch (ArithmeticException e) {
+//			System.out.println("Divided by Zero Error");
+//		}
+//		try {
+//			array1[10] = 100;
+//			System.out.println(array1[10]);
+//		} catch (ArrayIndexOutOfBoundsException e) {
+//			System.out.println("Array Out of Bound Error");
+//		}
+//		System.out.println("Hello Java");
+//		System.out.println("Hello Selenium");
+//	}
+//}
 
 //// ============================
-// public class Java_08_Exception {
-// public static void main(String[] args) {
+//public class Java_08_Exception {
+//	public static void main(String[] args) {
 //
-// try {
-// int data = 25 / 0;
-// System.out.println(data);
-// } catch (Exception e) {
-// System.out.println("abcd");
-// e.printStackTrace();
-// }
-// System.out.println("rest of the code...");
-// }
-// }
+//		try {
+//			int data = 25 / 0;
+//			System.out.println(data);
+//		} catch (Exception e) {
+//			System.out.println("abcd");
+//			e.printStackTrace();
+//		}
+//		System.out.println("rest of the code...");
+//	}
+//}
+
+//https://programming.guide/java/list-of-java-exceptions.html
 // =========================
 // Finally block cant be placed before catch block
 
-// public class Java_08_Exception {
-// public static void main(String[] args) {
-// try {
-// // connect to data base
-// int data = 25 / 5;
-// System.out.println(data);
-// } catch (ArithmeticException e) {
-// System.out.println(e);
-// } finally {
-// System.out.println("finally block is always executed");
-// }
-// System.out.println("rest of the code...");
-// }
-// }
+//public class Java_08_Exception {
+//	public static void main(String[] args) {
+//		try {
+//			// connect to data base
+//			int data = 25 / 5;
+//			System.out.println(data);
+//		} catch (ArithmeticException e) {
+//			System.out.println(e);
+//		} finally {
+//			System.out.println("finally block is always executed");
+//		}
+//		System.out.println("rest of the code...");
+//	}
+//}
 // ===========================
 // Finally block will be executed even if we do not handle the particular
 //// exception
 
-// public class Java_08_Exception {
-// public static void main(String[] args) {
-// try {
-// int data = 25 / 0;
-// // db= connect("server", 'username' 'pass')
-// System.out.println(data);
-// } catch (Exception e) {
-// System.out.println("error");
+//public class Java_08_Exception {
+//	public static void main(String[] args) {
+//		try {
+//			int data = 25 / 0;
+//			// db= connect("server", 'username' 'pass')
+//			System.out.println(data);
+//		} catch (Exception e) {
+//			System.out.println("error");
 //
-// } finally {
-// System.out.println("security threat closing connection");
-// // closeing datbase connection
-// }
+//		} finally {
+//			System.out.println("security threat closing connection");
+//			// closeing datbase connection
+//		}
 //
-// System.out.println("rest of the code...");
-// System.out.println("rest of the code...");
+//		System.out.println("rest of the code...");
+//		System.out.println("rest of the code...");
 //
-// }
-// }
+//	}
+//}
 // ========================
-// public class Java_08_Exception {
-// public static void main(String[] args) {
-// try {
-// int arr[] = new int[5];
-// arr[10] = 20;
-// // db= connect("server", 'username' 'pass')
-// } catch (ArithmeticException e) {
-// System.out.println("error");
+//public class Java_08_Exception {
+//	public static void main(String[] args) {
+//		try {
+//			int arr[] = new int[5];
+//			arr[10] = 20;
+//			// db= connect("server", 'username' 'pass')
+//		} catch (ArithmeticException e) {
+//			System.out.println("error");
 //
-// } finally {
-// System.out.println("security threat closing connection");
-// // closeing datbase connection
-// }
+//		} finally {
+//			System.out.println("security threat closing connection");
+//			// closeing datbase connection
+//		}
 //
-// System.out.println("rest of the code...");
-// System.out.println("rest of the code...");
+//		System.out.println("rest of the code...");
+//		System.out.println("rest of the code...");
 //
-// }
-// }
+//	}
+//}
 // ==================
 // If both the catch and finally blocks define return statements,
 // the calling method will receive a value from the finally block.
 
-// class Java_08_Exception {
+//class Java_08_Exception {
 //
-// public static void main(String args[]) {
-// Java_08_Exception var = new Java_08_Exception();
-// System.out.println(var.getInt());
-// }
+//	public static void main(String args[]) {
+//		Java_08_Exception var = new Java_08_Exception();
+//		System.out.println(var.getInt());
+//	}
 //
-// int getInt() {
-// try {
-// String[] students = { "Harry", "Paul" };
-// System.out.println(students[5]);
-// } catch (Exception e) {
-// System.out.println("catch");
-// return 10;
-// } finally {
-// System.out.println("finally");
-// return 20;
-// }
-// }
+//	int getInt() {
+//		try {
+//			String[] students = { "Harry", "Paul" };
+//			System.out.println(students[5]);
+//		} catch (Exception e) {
+//			System.out.println("catch");
+//			return 10;
+//		} finally {
+//			System.out.println("finally");
+//			return 20;
+//		}
+//	}
 //
-// }
+//}
 // ===================
 
-// class Java_08_Exception {
-// public static void main(String args[]) {
-// String name = null;
-// try {
-// System.out.println("Try block : open resource 1");
-// System.out.println("Try block : open resource 2");
-// System.out.println("in try : " + name.length());
-// System.out.println("Try block : close resources");
-// } finally {
-// System.out.println("finally : close resources");
-// }
-// System.out.println("after finally block ");
+//class Java_08_Exception {
+//	public static void main(String args[]) {
+//		String name = null;
+//		try {
+//			System.out.println("Try block : open resource 1");
+//			System.out.println("Try block : open resource 2");
+//			System.out.println("in try : " + name.length());
+//			System.out.println("Try block : close resources");
+//		} finally {
+//			System.out.println("finally : close resources");
+//		}
+//		System.out.println("after finally block ");// this will not executed
 //
-// }
-// }
+//	}
+//}
 // =======================
-// public class Java_08_Exception {
-// public static void main(String[] args) {
-// try {
-// int age = 10;
-// if (age < 18) {
-// throw new Exception();
-// }
-// } catch (Exception e) {
-// System.out.println(e);
-// }
-// try {
-// int age = 10;
-// if (age < 18) {
-// throw new NullPointerException();
-// }
-// } catch (NullPointerException e) {
-// System.out.println(e);
-// }
-// try {
-// throw new IOException();
-// } catch (IOException e) {
+//public class Java_08_Exception {
+//	public static void main(String[] args) {
+//		try {
+//			int age = 10;
+//			if (age < 18) {
+//				throw new Exception();
+//			}
+//		} catch (Exception e) {
+//			System.out.println(e);
+//		}
+//		try {
+//			int age = 10;
+//			if (age < 18) {
+//				throw new NullPointerException();
+//			}
+//		} catch (NullPointerException e) {
+//			System.out.println(e);
+//		}
+//		try {
+//			throw new IOException();
+//		} catch (IOException e) {
 //
-// e.printStackTrace();
-// }
-// }
-// }
+//			e.printStackTrace();
+//		}
+//	}
+//}
 
 // ================================
-// public class Java_08_Exception {
-//
-// public static void main(String[] args) {
-//
-// try {
-// validate(10);
-// } catch (ArithmeticException e) { //
-// e.printStackTrace();
-// // System.out.println(e);
-//
-// System.out.println("welcome to exception");
-// }
-// }
-//
-// static void validate(int age) {
-// if (age < 18)
-// throw new ArithmeticException("not valid");
-// else
-// System.out.println("welcome to vote");
-// }
-// }
+public class Java_08_Exception {
+
+	public static void main(String[] args) {
+
+		try {
+			validate(10);
+		} catch (ArithmeticException e) { //
+			e.printStackTrace();
+			// System.out.println(e);
+
+			System.out.println("welcome to exception");
+		}
+	}
+
+	static void validate(int age) {
+		if (age < 18)
+			throw new ArithmeticException("not valid");
+		else
+			System.out.println("welcome to vote");
+	}
+}
 
 // ==============================
 //

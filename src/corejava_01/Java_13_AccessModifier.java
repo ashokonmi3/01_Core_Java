@@ -15,7 +15,7 @@ public class Java_13_AccessModifier {
 
 	}
 
-	public void accessmodifier() {
+	public void accessmodifier() {// this is function
 		System.out.println("n = " + n_def);
 		System.out.println("n_pri = " + n_pri);
 		System.out.println("n_pro = " + n_pro);

@@ -1,8 +1,7 @@
 package corejava_01;
-
 /*
- * This is to demonstrate the multiline
- * comments how comments can be written
+ * This is to demonstrate the multi line comments how comments can be written
+ * this is again a line this is again a line
  */
 
 // comment
@@ -21,9 +20,11 @@ package corejava_01;
 //
 //	}
 //}
-
 //// ctrl+/ comment the code
 
+//ctrl+f11
+//green key Run
+//right click and run as java application
 // Public-
 // Access modifier (protected, Private, Default,public)
 // class - it is keyword
@@ -36,7 +37,8 @@ package corejava_01;
 // ctrl+f11
 // green key Run
 // right click and run as java application
-//With Ctrl + W we can close opened tab. With Ctrl + Shift + E we can select which files we want to close
+// With Ctrl + W we can close opened tab. With Ctrl + Shift + E we can select
+// which files we want to close
 // =====================
 
 //public class Java_01_Variable {
@@ -85,7 +87,7 @@ package corejava_01;
 //
 //	}
 //}
-// ===================================
+//// ===================================
 //// // // Declaration of multiple variable and Assigning values.
 //public class Java_01_Variable {
 //	public static void main(String[] args) {
@@ -103,32 +105,58 @@ package corejava_01;
 //		System.out.println(s);
 //	}
 //}
-
-// ===============
+//===============
+//public class Java_01_Variable {
+//	public static void main(String[] args) {
+//		int a;
+//		a = 10;
+//
+//		float e = 99;
+//		System.out.println(a);
+//		// System.out.println(b);
+//		// System.out.println(c);
+//		// System.out.println(d);
+//		System.out.println(e);
+//
+//	}
+//}
+//===============
 public class Java_01_Variable {
 	public static void main(String[] args) {
-
-		String s = "Selenium", name = "ashok";
-		int b = 10;
-		System.out.println("the string out put is " + s);
-		System.out.println("the int b out put is " + b);
-		System.out.println("My name is " + name);
+		int a;
+		a = 10.1;
+		System.out.println(a);
 
 	}
 }
 
+// ===============
+// public class Java_01_Variable {
+// public static void main(String[] args) {
+//
+// String s = "Selenium", name = "ashok";
+// int b = 10;
+// System.out.println("the string out put is " + s);
+// System.out.println("the int b out put is " + b);
+// System.out.println("My name is " + name);
+//
+// }
+// }
+
 // ============================
 // A- 65, B - 66
 // a - 97 b 99....
-
+//
 // public class Java_01_Variable {
 // public static void main(String[] args) {
-// char x = 'x';
+// char x = 'a';
 // char ch1 = 65;// 'A'
 // char ch2 = 99;// c
+// int a = 65;
 // System.out.println("the integer out put of character ch1 is " + ch1);
 // System.out.println("the integer out put of character ch2 is " + ch2);
 // System.out.println("the char x out put is " + x);
+// System.out.println("the int a is " + a);
 //
 // }
 // }

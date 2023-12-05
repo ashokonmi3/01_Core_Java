@@ -22,28 +22,28 @@ package corejava_01;
 
 // */
 // ================================
-public class Java_07_Functions {
-	public static void main(String[] args) {
-		System.out.println("Before function");
-		javaclass();
-		System.out.println("after function");
-		javaclass();
-		pythonclass();
-		javascript();
-	}
-
-	public static void javaclass() {
-		System.out.println("I am learning java");
-	}
-
-	public static void pythonclass() {
-		System.out.println("I am learning python");
-	}
-
-	public static void javascript() {
-		System.out.println("I am learning javasrcipt");
-	}
-}
+// public class Java_07_Functions {
+// public static void main(String[] args) {
+// System.out.println("Before function");
+// javaclass();
+// System.out.println("after function");
+// javaclass();
+// pythonclass();
+// javascript();
+// }
+//
+// public static void javaclass() {
+// System.out.println("I am learning java");
+// }
+//
+// public static void pythonclass() {
+// System.out.println("I am learning python");
+// }
+//
+// public static void javascript() {
+// System.out.println("I am learning javasrcipt");
+// }
+// }
 
 // =================================
 // public class Java_07_Functions {
@@ -53,13 +53,28 @@ public class Java_07_Functions {
 // printname("javascript");
 // }
 //
-// public static void printname(String s) {
+// public static void printname(String x) {
 //
-// System.out.println("I am learning " + s);
+// System.out.println("I am learning " + x);
 // }
 //
 // }
-// ================================
+//// ================================
+
+// public class Java_07_Functions {
+// public static void main(String[] args) {
+// double r = 10.0;
+//// getArea(r);
+//
+// public static void getArea(double radius) {
+//
+// double area = radius * radius * 3.14;
+// System.out.println("area is " + area);
+//
+// }
+//
+// }
+// =============
 // public class Java_07_Functions {
 // public static void main(String[] args) {
 // double r = 10.0;
@@ -77,14 +92,12 @@ public class Java_07_Functions {
 // public class Java_07_Functions {
 // public static void main(String[] args) {
 // int r = 10;
-// // int area;
 // getArea(r);
 // System.out.println("Price is " + (area * 10));
 //
 // }
 //
 // public static void getArea(int radius) {
-// // double area = radius * radius * 3.14;
 // double area = radius * radius * 3.14;
 // System.out.println("area is " + area);
 //
@@ -96,7 +109,7 @@ public class Java_07_Functions {
 //
 // public static void main(String[] args) {
 // int r = 2;
-// int pricearea = getArea(r);
+// int pricearea = getArea(10);
 // System.out.println("pricearea is " + pricearea);
 // int price = pricearea * 2000;
 // System.out.println("Price is " + price);
@@ -210,7 +223,7 @@ public class Java_07_Functions {
 // System.out.println("after function execution");
 // add(1000, 2000);
 // int z = add(1000, 2000, 300);
-// System.out.println("function out put with three parameter" + z);
+// System.out.println("function out put with three parameter " + z);
 // double a, b;
 // a = 1000;
 // b = 10000;
@@ -221,7 +234,7 @@ public class Java_07_Functions {
 // public static void add(int a) {
 // int result;
 // result = a + 10;
-// System.out.println("function out put with one parameter" + result);
+// System.out.println("function out put with one parameter " + result);
 //
 // }
 //
@@ -229,7 +242,7 @@ public class Java_07_Functions {
 // // overloading
 // // int result;
 // // result = a + "selenium";
-// System.out.println("function out put with one parameter" + a);
+// System.out.println("function out put with one parameter " + a);
 //
 // }
 //
@@ -242,14 +255,14 @@ public class Java_07_Functions {
 // public static void add(int a, int b) {
 // int result;
 // result = a + b;
-// System.out.println("function out put with two parameter" + result);
+// System.out.println("function out put with two parameter " + result);
 //
 // }
 //
 // public static void add(double a, double b) {
 // double result;
 // result = a + b;
-// System.out.println("function out put with double parameter" + result);
+// System.out.println("function out put with double parameter " + result);
 //
 // }
 //

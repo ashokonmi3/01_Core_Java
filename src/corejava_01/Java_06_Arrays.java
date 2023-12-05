@@ -23,6 +23,7 @@ import java.util.Arrays;
 // maths english science
 // int rollno= new int[100]
 //// String subject= new string[3]
+
 //public class Java_06_Arrays {
 //	public static void main(String[] args) {
 //		// // int x[]; // declaring array
@@ -59,9 +60,9 @@ import java.util.Arrays;
 //class Java_06_Arrays {
 //	public static void main(String[] args) {
 //		int array1[] = { 188, 288, 389, 49, 995 };
-//		System.out.println(array1.length);
+//		System.out.println(array1.length);// property
 //		String s = "java Selenium";
-//		System.out.println(s.length());
+//		System.out.println(s.length());// function
 //
 //	}
 //}
@@ -70,8 +71,10 @@ import java.util.Arrays;
 //class Java_06_Arrays {
 //	public static void main(String[] args) {
 //		int array1[] = { 188, 288, 389, 49, 995 };
-//		for (int i = 0; i < array1.length; i++) {
-//			System.out.println(array1[i]);
+//		for (int i = 0; i < array1.length; i++) { //(initialization; condition; increment)
+//			// System.out.println(array1[i]);// array1[0] array1[1] array1[2]
+//			System.out.println(i);
+//
 //		}
 //
 //	}
@@ -79,16 +82,19 @@ import java.util.Arrays;
 // =============================
 // copying arrary
 //class Java_06_Arrays {
-//	public static void main(String[] args) {
-//		int array1[] = { 1, 2, 3, 4, 5 };
-//		int array2[] = array1;
-//		System.out.println(array2 == array1);
-//		for (int i = 0; i < array2.length; i++) {
-//			System.out.println(array2[i]);
-//		}
+// public static void main(String[] args) {
+// int array1[] = { 1, 2, 3, 4, 5 };
+// int array2[] = array1;
+// System.out.println(array2 == array1);
+// for (int i = 0; i < array2.length; i++) {
+// System.out.println(array2[i]);
 //
-//	}
-//}
+// }
+//
+// array1[0] = 1000;
+// System.out.println(array2[0]);
+// }
+// }
 
 // ====================================
 /* copying the array */
@@ -97,10 +103,12 @@ import java.util.Arrays;
 //		int array1[] = { 11, 22, 33, 44, 55 };
 //		int array2[] = new int[array1.length];
 //		for (int i = 0; i < array1.length; i++) {
-//			array2[i] = array1[i];
+//			array2[i] = array1[i]; // array2[0]= array1[0]
 //			System.out.println(array2[i]);
 //
 //		}
+//		System.out.println("=============array2===========");
+//
 //		for (int i = 0; i < array2.length; i++) {
 //			System.out.println(array2[i]);
 //		}
@@ -116,7 +124,7 @@ import java.util.Arrays;
 //	public static void main(String[] args) {
 //		int array1[] = { 1, 2, 130, 4, 5 };
 //		int array2[] = { 100, 200, 13, 8, 9, 10 };
-//		System.arraycopy(array1, 2, array2, 2, 3);
+//		System.arraycopy(array1, 2, array2, 2, 3);     //(source, index in source, destination, index in destination, length)
 //		for (int i = 0; i < array2.length; i++) {
 //			System.out.println(array2[i]);
 //		}
@@ -145,8 +153,8 @@ import java.util.Arrays;
 //
 //		String[] s = { "java", "python", "scala", "ruby", "pearl" };
 //
-//		for (String x : s) {
-//			System.out.println(x);
+//		for (String xyz : s) {
+//			System.out.println(xyz + " selenium");
 //		}
 //	}
 //}
@@ -158,30 +166,40 @@ import java.util.Arrays;
 // * null User Defined Type : null // =============================
 // */
 // ================================
+// class Java_06_Arrays {
+// public static void main(String[] args) {
+// System.out.println("String array default values:");
+// String str[] = new String[5];
+//// str[0] = "java";
+// for (String s : str)
+// System.out.print(s + " ");
+// System.out.println("\n\nInteger array default values:");
+// int num[] = new int[5];
+// for (int val : num)
+// System.out.print(val + " ");
+// System.out.println("\n\nDouble array default values:");
+// double dnum[] = new double[5];
+// for (double val : dnum)
+// System.out.print(val + " ");
+// System.out.println("\n\nBoolean array default values:");
+// boolean bnum[] = new boolean[5];
+// for (boolean val : bnum)
+// System.out.print(val + " ");
+// System.out.println("\n\nReference Array default values:");
+// Java_06_Arrays ademo[] = new Java_06_Arrays[5];
+// for (Java_06_Arrays val : ademo)
+// System.out.print(val + " ");
+// }
+// }
+//====
 //class Java_06_Arrays {
 //	public static void main(String[] args) {
-//		System.out.println("String array default values:");
-//		String str[] = new String[5];
-//		for (String s : str)
-//			System.out.print(s + " ");
-//		System.out.println("\n\nInteger array default values:");
-//		int num[] = new int[5];
-//		for (int val : num)
-//			System.out.print(val + " ");
-//		System.out.println("\n\nDouble array default values:");
-//		double dnum[] = new double[5];
-//		for (double val : dnum)
-//			System.out.print(val + " ");
-//		System.out.println("\n\nBoolean array default values:");
-//		boolean bnum[] = new boolean[5];
-//		for (boolean val : bnum)
-//			System.out.print(val + " ");
-//		System.out.println("\n\nReference Array default values:");
-//		Java_06_Arrays ademo[] = new Java_06_Arrays[5];
-//		for (Java_06_Arrays val : ademo)
-//			System.out.print(val + " ");
+//		int arr;
+//		System.out.print(arr);
+//
 //	}
 //}
+
 // ================================ARRAY LIST=================
 /* ........... Normal Array............. */
 //class Java_06_Arrays {
@@ -190,7 +208,7 @@ import java.util.Arrays;
 //		arr[0] = 1;
 //		arr[1] = 2;
 //		arr[2] = 2;
-//		arr[3] = 2;
+//		arr[3] = 2; // java.lang.ArrayIndexOutOfBoundsException
 //		System.out.print("array index ");
 //
 //	}
@@ -199,7 +217,7 @@ import java.util.Arrays;
 //class Java_06_Arrays {
 //	public static void main(String[] args) {
 //		String[] arr1 = { "UFT", "Selenium", "RFT", "SilkTest" };
-//		arr1[4] = "python";
+//		arr1[4] = "python"; //java.lang.ArrayIndexOutOfBoundsException:
 //	}
 //}
 
@@ -207,15 +225,15 @@ import java.util.Arrays;
 //class Java_06_Arrays {
 //	public static void main(String[] args) {// System.out.println(arr[0]);
 //		ArrayList<Integer> arrL = new ArrayList<Integer>(2);
-//		// int arr[] = new int[3];
+//		// int x[] = new int[3];
 //		arrL.add(1);
 //		arrL.add(2);
 //		arrL.add(33);
 //		arrL.add(20);
 //		arrL.add(233);
-//		System.out.println(arrL.get(4));
+//		System.out.println(arrL.get(4)); // arr[4]
 //		System.out.println(arrL);
-//		System.out.println(arrL.size());
+//		System.out.println(arrL.size());// arr.lenght
 //
 //	}
 //}
@@ -232,15 +250,13 @@ import java.util.Arrays;
 //}
 // ===========================================
 
-// ==================================
 //class Java_06_Arrays {
 //	public static void main(String[] args) {
 //		// Sorting of an array
 //		int a[] = { 100, 20, 105, 101 };
 //		Arrays.sort(a);// util
-//		for (int i = 0; i < a.length; i++) {
-//			System.out.println(a[i]);
-//		}
+//		System.out.println(Arrays.toString(a));
+//
 //	}
 //}
 // =========================
@@ -274,12 +290,10 @@ class Java_06_Arrays {
 		int a[];
 		a = new int[5];
 		Arrays.fill(a, 1111);// fill the values by 10
-		for (int i = 0; i < a.length; i++) {
-			System.out.println(a[i]);
-		}
+		System.out.println(Arrays.toString(a));
+
 	}
 }
-// =============================
 
 // ================================
 

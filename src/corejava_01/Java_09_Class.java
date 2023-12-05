@@ -1,24 +1,24 @@
 package corejava_01;
 
-class Box1 {
-	double width;
-	double height;
-	double depth;
-}
-
-class Java_09_Class {
-	public static void main(String args[]) {
-		Box1 mybox = new Box1();
-		// int abc[] = new int[4];
-		// String s = new String("java");
-		double vol;
-		mybox.width = 10;
-		mybox.height = 20;
-		mybox.depth = 15;
-		vol = mybox.width * mybox.height * mybox.depth;
-		System.out.println("Volume is " + vol);
-	}
-}
+// class Box1 {
+// double width;
+// double height;
+// double depth;
+// }
+//
+// class Java_09_Class {
+// public static void main(String args[]) {
+// Box1 mybox = new Box1();
+// // int abc[] = new int[4];
+// // String s = new String("java");
+// double vol;
+// mybox.width = 10;
+// mybox.height = 20;
+// mybox.depth = 15;
+// vol = mybox.width * mybox.height * mybox.depth;
+// System.out.println("Volume is " + vol);
+// }
+// }
 //// ===========================================
 // class Box1 {
 // double width;

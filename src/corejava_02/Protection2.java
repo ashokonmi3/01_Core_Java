@@ -1,10 +1,10 @@
-package Package;
+package corejava_02;
 
-class Protection2 extends corejavapackage.Java_13_AccessModifier {
-	Protection2() {
+class InheritentAccessModifier extends corejava_01.Java_13_AccessModifier {
+	InheritentAccessModifier() {
 		System.out.println("derived other package constructor");
 		// class or package only
-		System.out.println("default n = " + n_def;
+		System.out.println("default n = " + n_def);
 		// class only
 		System.out.println("priivate n_pri = " + n_pri);
 		System.out.println("protected n_pro = " + n_pro);

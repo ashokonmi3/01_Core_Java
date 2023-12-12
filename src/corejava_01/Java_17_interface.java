@@ -346,36 +346,63 @@ package corejava_01;
 //	}
 //}
 //====================
-interface makeMytrip {
-	void show();
+//interface makeMytrip {
+//	void show();
+//}
+//
+//interface Goibibo {
+//	void show(int a);// need to implement all the function
+//
+//	void print();
+//
+//}
+//
+//class airaisa implements makeMytrip, Goibibo {
+//	public void show() {
+//		System.out.println("1 paramter");
+//	}
+//
+//	public void show(int a) {
+//		System.out.println("1 paramter");
+//	}
+//
+//	public void print() {
+//		System.out.println("No parameter");
+//	}
+//
+//}
+//
+//class Java_17_interface {
+//	public static void main(String args[]) {
+//		airaisa obj = new airaisa();
+//		obj.show();
+//
+//	}
+//}
+//======================
+interface MyInterface {
+	// Constant variables (implicitly public, static, and final)
+	int NUMBER = 10;
+	String NAME = "Interface";
+
+	// Method signature (abstract method)
+	void myMethod();
 }
 
-interface Goibibo {
-	void show(int a);// need to implement all the function
-
-	void print();
-
-}
-
-class airaisa implements makeMytrip, Goibibo {
-	public void show() {
-		System.out.println("1 paramter");
+class Java_17_interface implements MyInterface {
+	public void myMethod() {
+		System.out.println("Implementing abstract method in MyInterface");
 	}
 
-	public void show(int a) {
-		System.out.println("1 paramter");
-	}
+	public static void main(String[] args) {
+		System.out.println("Value of NUMBER: " + MyInterface.NUMBER);
+		System.out.println("Value of NAME: " + MyInterface.NAME);
+		// Attempting to modify the constant (will result in a compilation error)
+		// MyInterface.NUMBER = 20; // Compilation error: Cannot assign a value to final
+		// variable 'NUMBER'
 
-	public void print() {
-		System.out.println("No parameter");
-	}
-
-}
-
-class Java_17_interface {
-	public static void main(String args[]) {
-		airaisa obj = new airaisa();
-		obj.show();
+		Java_17_interface obj = new Java_17_interface(); // Creating an object of the implementing class
+		obj.myMethod(); // Invoking myMethod using the object
 
 	}
 }

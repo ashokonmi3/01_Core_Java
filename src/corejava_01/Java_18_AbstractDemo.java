@@ -7,6 +7,16 @@ package corejava_01;
  * showing only functionality to the user. It needs to be extended and its
  * method implemented. It cannot be instantiated.
  * 
+ * Abstract Class:
+a. An abstract class is a class that cannot be
+instantiated directly and is meant to serve as a
+base for subclasses.
+b. It can contain both regular methods with
+implementations and abstract methods without
+implementations.
+c. An abstract class is declared using the "abstract"
+keyword.
+ * 
  */
 // A Simple demonstration of abstract.
 //abstract class AforAbstraction {

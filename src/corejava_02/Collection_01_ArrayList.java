@@ -4,6 +4,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 
+//ArrayList is a data structure in programming that's part of the Java language (and similar concepts exist in other languages as well). 
+//It's a dynamic array that can resize itself when elements are added or removed.
+//
+//In Java, ArrayLists are part of the java.util package and provide more functionality compared to regular arrays. They allow you to:
+//
+//Dynamically Resize: Unlike arrays, ArrayLists can grow or shrink in size.
+//Store Objects: They can store objects of any type, including primitive types (with the use of wrapper classes).
+//Easy Manipulation: Elements can be easily added, removed, or accessed at any specified position.
+//=====================
+
 //class Collection_01_ArrayList {
 //	public static void main(String args[]) {
 //		ArrayList<String> list = new ArrayList<String>();// Creating arraylist
@@ -30,33 +40,33 @@ import java.util.Iterator;
 //}
 // =========================
 
-class Collection_01_ArrayList {
-	public static void main(String args[]) {
-		ArrayList<String> al = new ArrayList<String>();
-		System.out.println("Initial list of elements: " + al);
-		// Adding elements to the end of the list
-		al.add("Python");
-		al.add("Java");
-		al.add("Scala");
-		System.out.println("Arralylist is " + al);
-		// Adding an element at the specific position
-		al.add(1, "CPP");
-		System.out.println("After add(int index, E element) method: " + al);
-		ArrayList<String> al2 = new ArrayList<String>();
-		al2.add("Django");
-		al2.add("Golang");
-		// // Adding second list elements to the first list
-		al.addAll(al2);
-		System.out.println("After addAll " + al);
-		// ArrayList<String> al3 = new ArrayList<String>();
-		// al3.add("Bigdata");
-		// al3.add("Datascience");
-		// // Adding second list elements to the first list at specific position
-		// al.addAll(1, al3);
-		// System.out.println("After invoking addAll : " + al);
-
-	}
-}
+//class Collection_01_ArrayList {
+//	public static void main(String args[]) {
+//		ArrayList<String> al = new ArrayList<String>();
+//		System.out.println("Initial list of elements: " + al);
+//		// Adding elements to the end of the list
+//		al.add("Python");
+//		al.add("Java");
+//		al.add("Scala");
+//		System.out.println("Arralylist is " + al);
+//		// Adding an element at the specific position
+//		al.add(1, "CPP");
+//		System.out.println("After add(int index, E element) method: " + al);
+//		ArrayList<String> al2 = new ArrayList<String>();
+//		al2.add("Django");
+//		al2.add("Golang");
+//		// // Adding second list elements to the first list
+//		al.addAll(al2);
+//		System.out.println("After addAll " + al);
+//		// ArrayList<String> al3 = new ArrayList<String>();
+//		// al3.add("Bigdata");
+//		// al3.add("Datascience");
+//		// // Adding second list elements to the first list at specific position
+//		// al.addAll(1, al3);
+//		// System.out.println("After invoking addAll : " + al);
+//
+//	}
+//}
 // ===========================
 // import java.util.ArrayList;
 // import java.util.Collections;
@@ -116,8 +126,14 @@ public class Collection_01_ArrayList {
 		myNumbers.add(20);
 		myNumbers.add(25);
 		int index = myNumbers.indexOf(20);
-		System.out.println(index);
-		index = myNumbers.indexOf(200);
+
+
+		
+		
+		
+		
+		.out.println(index);
+
 		System.out.println(index);
 
 		for (int i : myNumbers) {

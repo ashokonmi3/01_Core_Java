@@ -1,172 +1,176 @@
 package corejava_01;
 
-// class A2 {
-// int i, j;
+//class A2 {
+//	int i, j;
 //
-// A2(int a, int b) {
-// i = a;
-// j = b;
-// }
+//	A2(int a, int b) {
+//		i = a;
+//		j = b;
+//	}
 //
-// // display i and j
-// void show() {
-// System.out.println("I am in A2 parent class");
-// System.out.println("i and j: " + i + " " + j);
-// }
-// }
+//	// display i and j
+//	void show() {
+//		System.out.println("I am in A2 parent class");
+//		System.out.println("i and j: " + i + " " + j);
+//	}
+//}
 //
-////
-// class B2 extends A2 {
-// int k;
+//class B2 extends A2 {
+//	int k;// i , j
 //
-// B2(int a, int b, int c) {
-// super(a, b);
-// k = c;
-// }
+//	B2(int a, int b, int c) {
+//		super(a, b);
+//		// A2(int a, int b) {
+//		// i = a;
+//		// j = b;
+//		// }
+//		k = c;
+//	}
 //
-// // display k – this overrides show() in A
-// void show() {
-// System.out.println("I am in B2 child class");
+//	// display k – this overrides show() in A
+//	void show() {
+//		System.out.println("I am in B2 child class");
 //
-// System.out.println("k: " + k);
-// }
-// }
+//		System.out.println("k: " + k);
+//	}
+//}
 //
-// class Java_12_Override {
-// public static void main(String args[]) {
-// A2 A2supOb = new A2(6, 7);
-// B2 B2subOb = new B2(1, 2, 3);
-// B2subOb.show(); // this calls show() in B
-// A2supOb.show();
-// }
-// }
+//class Java_12_Override {
+//	public static void main(String args[]) {
+//		A2 A2supOb = new A2(6, 7);
+//		B2 B2subOb = new B2(1, 2, 3);
+//		B2subOb.show(); // this calls show() in B
+//		A2supOb.show();
+//	}
+//}
 // ======================
-// class A2 {
-// int i, j;
+//class A2 {
+//	int i, j;
 //
-// A2(int a, int b) {
-// i = a;
-// j = b;
-// }
+//	A2(int a, int b) {
+//		i = a;
+//		j = b;
+//	}
 //
-// // display i and j
-// void show() {
-// System.out.println("I am in A2 parent class");
-// System.out.println("i and j: " + i + " " + j);
-// }
+//	// display i and j
+//	void show() {
+//		System.out.println("I am in A2 parent class");
+//		System.out.println("i and j: " + i + " " + j);
+//	}
 //
-// void show(int a) {
-// System.out.println("I am in A2 parent class");
-// System.out.println("value of a: " + a);
-// }
-// }
+//	void show(int a) {
+//		System.out.println("I am in A2 parent class");
+//		System.out.println("value of a: " + a);
+//	}
+//}
 //
 ////
-// class B2 extends A2 {
-// int k;
+//class B2 extends A2 {
+//	int k;
 //
-// B2(int a, int b, int c) {
-// super(a, b);
-// k = c;
-// }
+//	B2(int a, int b, int c) {
+//		super(a, b);
+//		k = c;
+//	}
 //
-// // display k – this overrides show() in A
-// void show() {
-// System.out.println("I am in B2 child class");
+//	// display k – this overrides show() in A
+//	void show() {
+//		System.out.println("I am in B2 child class");
 //
-// System.out.println("k: " + k);
-// }
-// }
+//		System.out.println("k: " + k);
+//	}
+//}
 //
-// class Java_12_Override {
-// public static void main(String args[]) {
-// A2 A2supOb = new A2(6, 7);
-// B2 B2subOb = new B2(1, 2, 3);
-// B2subOb.show(10); // this calls show() in B
-// A2supOb.show(10);
-// A2supOb.show();
-// }
-// }
+//class Java_12_Override {
+//	public static void main(String args[]) {
+//		A2 A2supOb = new A2(6, 7);
+//		B2 B2subOb = new B2(1, 2, 3);
+//		B2subOb.show(10); // this calls show() in B
+//		A2supOb.show(10);
+//		A2supOb.show();
+//		B2subOb.show();
+//	}
+//}
 // ==============================
 
 /* final to prevent inheritence */
-// class A2 {
-// final void meth() {
-// System.out.println("This is a final method.");
-// }
-// }
+//class A2 {
+//	final void meth() {
+//		System.out.println("This is a final method.");
+//	}
+//}
 //
-// class B2 extends A2 {
-// void meth() { // ERROR! Can't override.
-// System.out.println("Illegal!");
-// }
-// }
+//class B2 extends A2 {
+//	void meth() { // ERROR! Can't override.
+//		System.out.println("Illegal!");
+//	}
+//}
 // ===================
-// class A2 {
-// final void meth() {
-// System.out.println("This is a final method.");
-// }
-// }
+//class A2 {
+//	final void meth() {
+//		System.out.println("This is a final method.");
+//	}
+//}
 //
-// class B2 extends A2 {
-// void meth(int a) { // No ERROR! Can override.
-// System.out.println("Illegal!");
-// }
-// }
+//class B2 extends A2 {
+//	void meth(int a) { // No ERROR! Can override.
+//		System.out.println("Illegal!");
+//	}
+//}
 // ===================
-// class A2 {
-// final void meth() {
-// System.out.println("This is a final method.");
-// }
-// }
+//class A2 {
+//	final void meth() {
+//		System.out.println("This is a final method.");
+//	}
+//}
 //
-// class B2 extends A2 {
-// int meth() { // ERROR! Can't override.
-// System.out.println("Illegal!");
-// return 1;
-// }
-// }
+//class B2 extends A2 {
+//	int meth() { // ERROR! Can't override.
+//		System.out.println("Illegal!");
+//		return 1;
+//	}
+//}
 
 // =================================
-// class Bank {
-// int getRateOfInterest() {
-// return 0;
-// }
-// }
-//
-//// Creating child classes.
-// class SBI extends Bank {
-// int getRateOfInterest() {
-// return 8;
-// }
-// }
-//
-// class ICICI extends Bank {
-// int getRateOfInterest() {
-// return 7;
-// }
-// }
-//
-// class AXIS extends Bank {
-// int getRateOfInterest() {
-// return 9;
-// }
-// }
-//
-//// Test class to create objects and call the methods
-// class Java_12_Override {
-// public static void main(String args[]) {
-// SBI s = new SBI();
-// ICICI i = new ICICI();
-// AXIS a = new AXIS();
-// Bank b = new Bank();
-// System.out.println("SBI Rate of Interest: " + s.getRateOfInterest());
-// System.out.println("ICICI Rate of Interest: " + i.getRateOfInterest());
-// System.out.println("AXIS Rate of Interest: " + a.getRateOfInterest());
-// System.out.println("Default Rate of Interest: " + b.getRateOfInterest());
-//
-// }
-// }
+class Bank {
+	int getRateOfInterest() {
+		return 0;
+	}
+}
+
+// Creating child classes.
+class SBI extends Bank {
+	int getRateOfInterest() {
+		return 8;
+	}
+}
+
+class ICICI extends Bank {
+	int getRateOfInterest() {
+		return 7;
+	}
+}
+
+class AXIS extends Bank {
+	int getRateOfInterest() {
+		return 9;
+	}
+}
+
+// Test class to create objects and call the methods
+class Java_12_Override {
+	public static void main(String args[]) {
+		SBI s = new SBI();
+		ICICI i = new ICICI();
+		AXIS a = new AXIS();
+		Bank b = new Bank();
+		System.out.println("SBI Rate of Interest: " + s.getRateOfInterest());
+		System.out.println("ICICI Rate of Interest: " + i.getRateOfInterest());
+		System.out.println("AXIS Rate of Interest: " + a.getRateOfInterest());
+		System.out.println("Default Rate of Interest: " + b.getRateOfInterest());
+
+	}
+}
 
 // ===================
 

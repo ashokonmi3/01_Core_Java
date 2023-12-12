@@ -4,6 +4,8 @@ import java.util.LinkedList;
 
 //// it uses doubly link list to store the element
 //// better for manipulating data as no shifting required
+
+//=================
 // public class Collection_02_LinkedList {
 // public static void main(String args[]) {
 //
@@ -110,7 +112,7 @@ public class Collection_02_LinkedList {
 	}
 }
 // =================================
-// ArrayList LinkedList
+// ArrayList vs LinkedList
 // 1) ArrayList internally uses a dynamic array to store the elements.
 // LinkedList internally uses a doubly linked list to store the elements.
 // 2) Manipulation with ArrayList is slow because it internally uses an array.

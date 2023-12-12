@@ -179,25 +179,25 @@ package corejava_01;
 
 // ===========================================
 ////
-// public class Java_07_Functions {
-// public static void main(String[] args) {
-// String Rank = studentRank(1000);// r
-// System.out.println(Rank);
-// }
-//
-// public static String studentRank(int marks) {
-// if (marks >= 600) {
-// String r = "A1";
-// return r;
-// } else if (marks <= 500) {
-// String r = "A2";
-// return r;
-// } else {
-// String r = "A3";
-// return r;
-// }
-// }
-// }
+public class Java_07_Functions {
+	public static void main(String[] args) {
+		String Rank = studentRank(1000);// r
+		System.out.println(Rank);
+	}
+
+	public static String studentRank(int marks) {
+		if (marks >= 600) {
+			String r = "A1";
+			return r;
+		} else if (marks <= 500) {
+			String r = "A2";
+			return r;
+		} else {
+			String r = "A3";
+			return r;
+		}
+	}
+}
 
 // ====================
 

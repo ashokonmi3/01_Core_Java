@@ -1,5 +1,7 @@
 package corejava_01;
 
+import java.io.IOException;
+
 /*
  * Imagine you’re about to board an airplane to Geneva to attend an important
  * confer- ence. At the last minute, you learn that the flight has been
@@ -230,55 +232,55 @@ package corejava_01;
 //	}
 //}
 // =======================
-//public class Java_08_Exception {
-//	public static void main(String[] args) {
-//		try {
-//			int age = 10;
-//			if (age < 18) {
-//				throw new Exception();
-//			}
-//		} catch (Exception e) {
-//			System.out.println(e);
-//		}
-//		try {
-//			int age = 10;
-//			if (age < 18) {
-//				throw new NullPointerException();
-//			}
-//		} catch (NullPointerException e) {
-//			System.out.println(e);
-//		}
-//		try {
-//			throw new IOException();
-//		} catch (IOException e) {
-//
-//			e.printStackTrace();
-//		}
-//	}
-//}
-
-// ================================
 public class Java_08_Exception {
-
 	public static void main(String[] args) {
-
 		try {
-			validate(10);
-		} catch (ArithmeticException e) { //
-			e.printStackTrace();
-			// System.out.println(e);
+			int age = 10;
+			if (age < 18) {
+				throw new Exception();
+			}
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		try {
+			int age = 10;
+			if (age < 18) {
+				throw new NullPointerException();
+			}
+		} catch (NullPointerException e) {
+			System.out.println(e);
+		}
+		try {
+			throw new IOException();
+		} catch (IOException e) {
 
-			System.out.println("welcome to exception");
+			e.printStackTrace();
 		}
 	}
-
-	static void validate(int age) {
-		if (age < 18)
-			throw new ArithmeticException("not valid");
-		else
-			System.out.println("welcome to vote");
-	}
 }
+
+// ================================
+// public class Java_08_Exception {
+//
+// public static void main(String[] args) {
+//
+// try {
+// validate(10);
+// } catch (ArithmeticException e) { //
+// e.printStackTrace();
+// // System.out.println(e);
+//
+// System.out.println("welcome to exception");
+// }
+// }
+//
+// static void validate(int age) {
+// if (age < 18)
+// throw new ArithmeticException("not valid");
+// else
+// System.out.println("welcome to vote");
+// }
+// }
 
 // ==============================
 //
@@ -330,14 +332,25 @@ public class Java_08_Exception {
 // main() method which will cause InterruptedException.
 
 // ---------------------
-// class Java_08_Exception {
-// public static void main(String[] args) throws InterruptedException {
-// System.out.println("Hello java");
-// Thread.sleep(10000);
-// Thread.currentThread().interrupt();
-// System.out.println("Hello selenium");
-// }
-// }
+class Java_08_Exception {
+	public static void main(String[] args) {
+
+		System.out.println("Hello selenium");
+		try {
+			run();
+
+		} catch (InterruptedException e) {
+			System.out.println("Exception occured");
+
+		}
+	}
+
+	public static void run() throws InterruptedException {
+		System.out.println("Hello java");
+		Thread.sleep(10000);
+	}
+}
+
 // ====================
 // class MyClass extends Thread {
 // public void run() {
@@ -355,18 +368,19 @@ public class Java_08_Exception {
 // }
 // }
 //
-// class Java_08_Exception {
-// public static void main(String[] args) throws InterruptedException {
-// MyClass thread = new MyClass();
-// thread.start();
-//
-// // main thread calls interrupt() method on
-// // child thread
-// thread.interrupt();
-//
-// System.out.println("Main thread execution completes");
-// }
-// }
+////
+class Java_08_Exception {
+	public static void main(String[] args) throws InterruptedException {
+		MyClass thread = new MyClass();
+		thread.start();
+
+		// main thread calls interrupt() method on
+		// child thread
+		thread.interrupt();
+
+		System.out.println("Main thread execution completes");
+	}
+}
 // =====================
 // class Java_08_Exception {
 // public void finalize() {
